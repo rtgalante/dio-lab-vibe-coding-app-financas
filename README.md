@@ -87,3 +87,271 @@ No README do seu repositório, inclua:
 ## 💬 Conclusão
 
 Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+
+---
+- Entrega do Desafio
+---
+
+- Prompt Final
+- 
+# PROMPT PARA LOVABLE — MVP APP DE FINANÇAS POR CONVERSA
+
+## 1. Contexto do Produto
+
+Quero construir um aplicativo de organização de finanças pessoais baseado em conversação em linguagem natural.
+
+O objetivo é permitir que usuários registrem gastos, criem metas financeiras e recebam recomendações automáticas conversando com um “Agente Financeiro”, sem precisar preencher formulários complexos ou usar planilhas.
+
+O público principal são iniciantes em organização financeira.
+
+O diferencial do produto é simplicidade, linguagem natural e experiência inclusiva.
+
+---
+
+## 2. Objetivo do MVP
+
+Construir um MVP funcional que permita:
+
+1. Registrar gastos via chat em linguagem natural.
+2. Classificar automaticamente transações.
+3. Criar e acompanhar metas financeiras.
+4. Gerar relatórios simples.
+5. Oferecer recomendações personalizadas por meio de um Agente Financeiro.
+
+O foco é validar se a experiência conversacional é mais simples e intuitiva do que apps tradicionais.
+
+---
+
+## 3. Público-Alvo
+
+Primário:
+
+* Iniciantes em organização financeira.
+* Pessoas com baixa familiaridade com planilhas.
+* Usuários que preferem comunicação simples.
+
+Secundário:
+
+* Pessoas que já tentaram apps financeiros e desistiram.
+* Usuários com pouco tempo para controle manual.
+
+---
+
+## 4. Escopo Funcional do MVP
+
+### 4.1 Registro de Gastos por Linguagem Natural
+
+O sistema deve:
+
+* Interpretar frases como:
+
+  * “Gastei 50 reais no mercado.”
+  * “Uber 32.”
+  * “Paguei 120 de luz.”
+* Extrair:
+
+  * Valor
+  * Descrição
+  * Categoria provável
+* Confirmar antes de salvar.
+* Permitir correção por linguagem natural:
+
+  * “Corrige, foi 15.”
+* Salvar no banco de dados após confirmação.
+
+Critérios de aceitação:
+
+* O usuário consegue registrar um gasto em menos de 10 segundos.
+* O sistema responde com confirmação clara.
+
+---
+
+### 4.2 Classificação Automática
+
+* Classificar automaticamente por categoria (Alimentação, Transporte, Moradia etc.).
+* Permitir correção manual simples.
+* Aprender padrões recorrentes do usuário (opcional no MVP, mas desejável).
+
+Critério de aceitação:
+
+* Classificação correta em pelo menos 70% dos casos iniciais.
+
+---
+
+### 4.3 Metas Financeiras
+
+O usuário pode dizer:
+“Quero economizar 1000 reais para viagem.”
+
+O sistema deve:
+
+* Criar meta.
+* Definir valor alvo.
+* Calcular sugestão mensal com base no prazo (se informado).
+* Mostrar progresso.
+
+Critério de aceitação:
+
+* Meta criada via linguagem natural.
+* Progresso visível na tela de metas.
+
+---
+
+### 4.4 Agente Financeiro
+
+O sistema deve gerar insights automáticos como:
+
+* “Você gastou 20% a mais com delivery este mês.”
+* “Se reduzir 10% do transporte, você atinge sua meta um mês antes.”
+
+Requisitos:
+
+* Linguagem educativa.
+* Tom motivador.
+* Nunca usar linguagem julgadora.
+
+---
+
+### 4.5 Relatórios Simples
+
+Criar uma tela com:
+
+* Resumo mensal.
+* Total gasto.
+* Gastos por categoria.
+* Progresso das metas.
+* Resumo textual explicativo.
+
+Evitar gráficos complexos ou excesso de dados.
+
+---
+
+## 5. Estrutura de Telas do MVP
+
+### Tela 1 — Chat (Principal)
+
+* Campo de mensagem.
+* Histórico da conversa.
+* Acesso rápido a:
+
+  * Metas.
+  * Relatórios.
+
+Essa deve ser a tela central do produto.
+
+---
+
+### Tela 2 — Metas
+
+* Lista de metas.
+* Barra de progresso.
+* Criar nova meta.
+
+---
+
+### Tela 3 — Relatórios
+
+* Resumo do mês atual.
+* Gastos por categoria.
+* Insights automáticos.
+
+---
+
+### Tela 4 — Configurações
+
+* Ajuste de categorias.
+* Preferências de acessibilidade.
+* Exportação simples (CSV).
+
+---
+
+## 6. Diretrizes de UX (Design Universal)
+
+O produto deve seguir princípios de Design Universal:
+
+* Linguagem simples, sem jargões técnicos.
+* Interface mobile-first.
+* Alto contraste visual.
+* Botões grandes e legíveis.
+* Ícones com rótulos textuais.
+* Compatibilidade com leitores de tela.
+* Feedback claro após cada ação.
+* Opção de desfazer ações.
+* Fluxo com poucos cliques.
+
+A experiência deve funcionar bem para:
+
+* Usuários iniciantes.
+* Pessoas com baixa familiaridade tecnológica.
+* Pessoas com possíveis limitações visuais.
+
+---
+
+## 7. Requisitos Técnicos
+
+* Motor de processamento de linguagem natural.
+* Banco de dados estruturado para:
+
+  * Transações
+  * Categorias
+  * Metas
+  * Usuários
+* Autenticação simples e segura.
+* Criptografia de dados sensíveis.
+* Arquitetura preparada para expansão futura.
+
+---
+
+## 8. Métricas de Validação
+
+Definir eventos para medir:
+
+* Número de gastos registrados na primeira semana.
+* Retenção em 7 dias.
+* Frequência de uso do chat.
+* Criação de pelo menos 1 meta.
+
+Objetivo do MVP:
+Validar que usuários consideram o registro por conversa mais simples do que planilha ou apps tradicionais.
+
+---
+
+## 9. Entregáveis Esperados do Lovable
+
+1. Estrutura inicial do banco de dados.
+2. Fluxo conversacional básico.
+3. Estrutura das telas.
+4. Lógica de classificação inicial.
+5. Prompt base do Agente Financeiro.
+6. Protótipo navegável.
+
+---
+
+Se quiser, no próximo passo posso te entregar também:
+
+* Um prompt específico só para o Agente Financeiro.
+* A modelagem inicial do banco de dados.
+* O fluxo conversacional detalhado em formato de estados.
+* Um plano de evolução para V2.
+
+- Resumo das funcionalidades do App
+O app Agente Financeiro é composto de 4 telas com as seguintes funcionalidades:
+chat para conversar com o agente e incluir gastos e recebimentos
+metas para visualizar a posição das metas
+relatorios para verificar status de gastos por categoria
+ajustes para editar metas e para exportar csv
+
+- Reflexão do desafio
+O que funcionou bem: o desenvolvimento do app no lovable
+O que não funcionou como esperado: o copilot não respondeu aos prompts, tive que utilizar o chatgpt
+O que aprendi sobre conversar com IAs: devemos enviar o maximo possivel de informações claras, detalhadas e objetivas para obter o mais proximo dos resultados esperados
+
+- Prints das 4 telas
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c9c801e5-aa25-4505-9c61-941c7267fd21" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f8dbe87e-cd07-4449-88d2-b010e6bc6ca2" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d16b7c77-36cb-49c6-ab87-a50156e68dcb" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/266c7171-1c98-48bd-a6b4-c66e0e82976d" />
+
+
+
+
